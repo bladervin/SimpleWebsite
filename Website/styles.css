@@ -1,0 +1,206 @@
+/*Body page: add background image, fit into page and position it */
+body{
+    background-image: url("asdd.jpeg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Grid layout for all the contents of webpage 
+  Use grid-template-area to input grid in a way you want*/
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 250px 1fr 170px;
+  grid-template-rows: auto auto 80px;
+  grid-gap:20px;
+  height: 100vh;
+}
+
+/* header: change color, size, align center, padding to make it look big and margin to create space around the element.*/
+header {
+  font-size: 40px;
+  text-align: center;
+  grid-area: header;
+  padding: 0px;
+  margin: 0px;    
+}
+
+/* Change header h1 color, style, position*/
+header h1{
+    color: purple;
+    font-family: fantasy;
+    font-style: italic;
+    position: relative;
+    top: 30px;
+}
+
+/* Change paragraph in header size, align, style */
+header p{
+   font-size: 30px;
+   position: relative;
+   text-align: center;
+   font-family: fantasy;
+   position: relative;
+   left: 200px;
+}
+
+/* Change the navigation links style: height, grid layout*/
+nav {
+    grid-area: nav;
+    margin-left: 0 rem;
+    height: 500px; 
+}
+
+/* The navigation links in the list: change color, text color, size, position*/
+.navbar ul {
+    background-image: url(gala.jpg);
+    background-position: center;
+    font-family: fantasy;
+    overflow:inherit;
+    position: relative;
+    top: 25px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.nav li{
+    font-size: 30px;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    bottom: 0px;   
+}
+
+/* The list in navigation link color and add animation: change color for seconds */
+li a{
+    color: black;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+
+/* Use webkit-keyframes to change color like an animation of links*/
+@-webkit-keyframes example {
+    from {color: black;}
+    to {color: red;}
+}
+
+/* When you hover over navigation links change color*/
+li a:hover{
+    text-decoration: none;
+    background-color: yellowgreen;
+}
+
+/* The main content page: grid layout and position*/
+main {
+  grid-area: content;
+  align-self: top;
+  justify-self: center;
+    position: relative;
+    right: 100px;
+}
+
+/*Start Game: change color and font size */
+.game{
+   text-transform: uppercase;
+   font-size: 84px;
+   font-family: Georgia, Serif;
+   color: purple;
+   }
+
+main .game{
+    color:purple;
+}
+
+.game:hover {
+    background: yellow;
+}
+
+aside {
+    grid-area: side;    
+    border-radius: 55px; 
+    box-shadow: 100px;
+    position: relative;
+    bottom: 58px;    
+    background: linear-gradient(to bottom right, #00ffff 0%, #66ff66 100%);
+    background-position: right;    
+    margin-right: .1rem;
+    text-align: center;
+    
+    -webkit-animation-name: side; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    animation-name: side;
+    animation-duration: 10s;
+    animation-iteration-count: 5; 
+    }
+
+@-webkit-keyframes side {
+    from {color: white;}
+    to {color: black;}
+}
+
+img{
+    width:50px;
+    height:auto;
+    position:relative;
+    right: 20px;
+}
+
+aside .how{
+    font-size: 60px;
+    color: yellowgreen;
+    }
+
+aside li{
+    text-align: left;
+    }
+
+aside .contact{
+    color: yellowgreen;
+    }
+
+footer {
+  grid-area: footer;
+   border: 2px solid crimson;
+    text-align: center;
+}
+
+/*Media queries for responsive grid*/
+@media(max-width: 800px){
+    .container{
+        grid-template-areas:
+            'header header header'
+            'content content content'
+            'footer footer footer';
+    }
+    main {
+  grid-area: content;
+  align-self: center;
+  justify-self: center;    
+}
+    aside{
+         visibility: hidden;
+    }
+    
+    header{
+        visibility: hidden;
+    }
+    main{
+        position: absolute;
+    left: 100px;
+    top: 0;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+     }  
+}

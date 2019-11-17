@@ -1,0 +1,167 @@
+<html>
+
+<head>
+
+<style>
+    
+    body{
+        background-color: lightsteelblue;
+    }
+    
+    .first{
+        margin: 20px;
+        padding: 10px;
+        word-spacing: 0px;
+        font-size: 35px;
+    }
+        
+    .div1, div2{
+        float: left;
+        padding: 2px;
+    }
+    
+    .div3, .div4{
+        float:left;
+        position: relative;
+        right: 500px;
+        padding: 5px;
+    }
+    .div5{
+        float: left;
+        position: relative;
+        right: 995px;
+        top: 50px;
+    }
+    
+    .div6{
+        float: left;
+        position: relative;
+        left: 590px;
+        bottom: 500px;
+    }
+    
+    .div7{
+        float:left;
+        position: relative;
+        top: 50px;
+        right: 480px;
+    }
+    
+</style>    
+
+</head>
+
+<body>
+
+<div class="first">
+
+
+<header>
+    <h2>Report</h2>
+    <h2>Coursework Submission 1</h2>
+    <h2>Name: Vinay NEPALI </h2>
+    <h3>M00585215</h3>
+    
+</header>    
+
+<p>I have used five different types of structure elements and they are: header, footer, nav, main and aside.
+<br> The <b>&lt;header&gt;</b> tag is for defining the heading of my webpage. I used in the common.php file using echo, in the function
+<br> so I can include it on my index.php file first. I used it at the top of my website for every page.<br> 
+The <b>&lt;footer&gt;</b> tag  is for defining the footer of my webpage which is positioned at the bottom of every page.    
+<br> The <b>&lt;nav&gt;</b> tag is for the navigation links which consists of various other tags for creating a navigation link. I used it
+<br> after the header tag to create a navigation link at the left hand side of my webpage. I created a list inside the nav tag and 
+<br> used &lt;a&gt; tag to link from one page to another.  
+<br> The <b>&lt;main&gt;</b> tag is for showing the main content of a document. This is the main content page of my website and I used 
+<br> it in the center after the nav tag to section it as my main content.    
+<br> Finally, the <b>&lt;aside&gt;</b> tag defines content aside from the content it is placed on. I used it to create a sidebar on the 
+<br> right hand side of my webpage showing the contact information. 
+</p>  
+<hr>
+    
+<p>There are lots of content elements I used for my website; the 10 types are: </p> 
+    
+<ul>
+    <li>&lt;h1&gt; tag used to define headings. h1 is the largest heading compared to h6. I used it for my headings in every page.</li>
+    <li> &lt;p&gt; is a tag which defines my paragraph: it's one line. I used it in the header at the top for every webpage; I used echo p tag in the common.php file</li>
+    <li>&lt;ul&gt; tag defines an unordered list, which I used for my navigation links in the homepage index.php</li>
+    <li>&lt;li&gt; tag defines my list item, so my navigation links are in a list. Used CSS to change style and make it appear next to each other.</li>
+    <li>&lt;a&gt; tag is a hyperlink which I created to link my website from one page to another. It's in every webpage in order to help navigate to the next page or go back to the homepage.</li>
+    <li>&lt;b&gt; tag means to color my text bold, which I used for the footer in the common.php file</li>
+    <li>&lt;div&gt; tag defines a section in the document. I used div container for my main homepage index.php and used CSS in order to display the page as a grid layout system</li>
+    <li>&lt;label&gt; tag defines a label for my register and login buttons in the register.php and login.php files.</li>
+    <li>&lt;form&gt; tag for user input so my user can type in the register and play the game. </li>
+    <li>&lt;button&gt; tag is for clickable button. This is my submit button in the register.php once you have created username and password you click on it.</li>
+    
+</ul>    
+<hr>    
+
+    <p1>I used CSS to format many aspects of my webpage from body, heading, footer to main content. There were various types of CSS formatting I used to improve my page design. First, I used div container and in the CSS file display:grid to make it work. Then, I changed the layout of the grid using grid-template-areas and many others to position the gap between rows and columns. I added background image in the body{} to make the page look appealing and for the structure elements like header, footer I changed the color, the text-size, it's position and added effects by using the selectors and picking the color:;, text-size:;, position:; applicable in according to my webpage. I also used margin and padding for my header to create space around it's elements and make it look special. I also used it for my navigation links and main content so I can use border properly and fit it all in.</p1>
+   
+    <br>
+    <p>
+    I also added webkit-animation to change the color of my homepage links and sidebar like an animation. I also used link hover to highlight the link I click on to make the link more visible. I also used media queries to make my page responsive so when the size changes the contents change too. Also for the image I used CSS to change it's opacity, it's size and width to make it appear on the webpage in a way I want.</p>
+    
+<hr>
+    <p>
+    The main class attribute I used for the div tag is called container. This helps to create a grid layout system where I can section parts of my document in anyway I want so the header can be at top and footer at the bottom.
+    The class attribute helps define styles for elements so any class with the same name can have the same format and style. But with ID it is unique in the sense an ID can be in real life so if you want to change a particular element, which in my case was the submit button text in register.php, which I wanted to style it in particular to fit in with the form.
+    The reason I used class and IDs is because it's efficient and in a few CSS files you can manage hundreds of class and Id's so all the design can be in one place, rather than hundred. It also helps distinguish each element from other so the content in login page is very different to the gamepage from the text-size to the position.</p>
+    
+<hr>
+<h3>Grid layout</h3>
+    
+    <p>The grid layout I used for my webpage is in the index1.css; I used grid-template-areas to section my webpage into different parts so I essentially created a grid of 3 columns and 3 rows with header at top, footer at bottom and the nav, main and aside contents in the middle. I used this grid layout on my home webpage. In the navbar.php I also used grid to my navigation links. I used rows of 4 and positioned it to make my link appear next to each other vertically.</p>    
+    
+</div>    
+    
+<hr>
+<h2 style="font-size: 40px";>PHP functions</h2>
+    
+    <p style="font-size: 30px";>I created 3 PHP functions so I can generate it for multiple pages. They are my header, footer and navigation links. I named these functions different for each one so to call my header I would have to use outputHeader(""); and whatever I input in the brackets would output on that webpage. I have two files of php which I can call and they are: common.php and navbar.php; I used include to call these functions on any page I want but to do that I have to make it into a php file as HTML doesn't work. The navbar.php has the navigation function and it uses array to hold the values and each value can be linked to a different page. The problem I encountered was using the array and creating these values as the syntax is quite confusing compared to html. </p>
+    <hr>
+    
+    <h3>Website Screenshots</h3>
+    <div class="div1">
+            <img src="Screenshots/home.jpg" height="500" width="500">
+            <p style="font-size: 20px;">This is the index page of my website.</p>
+    </div>
+    
+    <div class="div2">
+            <img src="Screenshots/home1.jpg" height="500" width="500">
+            <p style="font-size: 20px;">Still the index page; as you can see the color changes from black to red and also if you hover over the Start Game link the background color is yellow</p>
+    </div>
+    
+    <div class="div3">
+        <img id ="game" src="Screenshots/gamepge.jpg" height="500" width="500"><br>
+        <p style="font-size: 20px;">The game page of my website, right now is just an example, <br>only home navigation link for going back to index page</p>
+    </div>
+    
+    <div class="div4">
+        <img src="Screenshots/registerpge.jpg" height="500" width="500">
+        <p>My registration page: contains form of username and password then submit button.</p>
+    </div>
+    
+    <div class="div5">
+        <img src="Screenshots/loginpge.jpg" height="500" width="500">
+        <p>My login page: enter username and password. The navbar shows the current link</p>
+    </div>
+    
+    <div class="div6">
+        <img src="Screenshots/rankings.jpg" height="500" width="500">
+        <p>This is my rankings page; contains score of the game.</p>
+    </div>
+    
+    <div class="div7">
+        <img src="Screenshots/guide.jpg" height="500" width="500">
+        <p>This is my how to play link page that shows in steps the rules and guidelines on how to play game</p>
+    </div>
+    
+</body>
+
+
+
+
+
+
+
+</html>

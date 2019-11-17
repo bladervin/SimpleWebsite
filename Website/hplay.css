@@ -1,0 +1,48 @@
+body{
+    height: 100px;
+    background-color: red;
+    background-image: linear-gradient(red, yellow);
+    
+
+}
+
+#home{
+    color:dark blue;
+    position: fixed;
+    top:30px;
+    left:40px;
+    font-family:times,serif;
+    font-size: 30px;
+}
+
+#diff{
+    position: fixed;
+	top: 80px;
+    left: 40px;
+}
+
+.how{
+    font-size: 25px;
+    position: fixed;
+    top: 120px;
+    left: 40px;
+    
+}
+
+
+#one{
+    position: fixed;
+    top: 210px;
+	left:5px;
+}
+
+#two{
+    position: fixed;
+    top: 420px;
+}
+
+li{
+	font-size: 25px;
+	
+	
+}

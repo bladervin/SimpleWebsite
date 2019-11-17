@@ -1,0 +1,130 @@
+body{
+    background-image: url("asdd.jpeg");
+    
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+/*Grid layout for all the contents of webpage */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content content"
+    "footer footer footer";
+
+  grid-template-columns: 100px 1fr 170px;
+  grid-template-rows: auto auto 80px;
+  grid-gap:20px;
+  height: 100vh;
+}
+
+/*  */
+header {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  grid-area: header;
+  padding: 0px;
+  margin: 0px;    
+}
+
+header h1{
+    color: purple;
+    font-family: fantasy;
+    font-style: italic;
+    position: relative;
+    top: 60px;
+}
+
+nav {
+ grid-area: nav;
+ margin-left: 0 rem;
+ height: 300px; 
+    
+
+}
+
+.navbar ul {
+    background-image: url(gala.jpg);
+    background-position: center;
+    font-family: fantasy;
+    overflow:inherit;
+    position: relative;
+    top: 120px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.nav li{
+    
+    font-size: 30px;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    bottom: 0px;   
+}
+
+li a{
+    color: black;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+
+@-webkit-keyframes example {
+    from {color: black;}
+    to {color: red;}
+}
+
+li a:hover{
+    text-decoration: none;
+    background-color: yellowgreen;
+}
+
+
+main {
+  grid-area: content;
+  padding: 10px;
+  margin: 10px;
+}
+
+.customers{
+    border-collapse:collapse;
+    width: 100%;
+   margin: 60px;
+}
+
+.customers td, #customers th {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.customers th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 25px;
+}
+
+
+
+
+footer {
+  grid-area: footer;
+   border: 2px solid crimson;
+    text-align: center;
+}

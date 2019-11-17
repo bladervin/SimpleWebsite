@@ -1,0 +1,125 @@
+/*Grid layout for all the contents of webpage */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 100px 1fr 170px;
+  grid-template-rows: auto auto 80px;
+  grid-gap:20px;
+  height: 100vh;
+}
+/*  */
+header {
+  background-image: url();
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  font-family: fantasy;
+  grid-area: header;
+  padding: 0px;
+  margin: 0px;    
+}
+header h1{
+    font-family: fantasy;
+    position: relative;
+    top: 50px;
+}
+
+nav {
+ grid-area: nav;
+ margin-left: 30px;
+ height: 300px; 
+    
+
+}
+
+.navbar ul {
+    
+    font-family: fantasy;
+    overflow:inherit;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.nav li{
+    
+    font-size: 30px;
+    padding: 30px;
+    margin: 5px;
+    position: relative;
+    bottom: 0px;   
+}
+
+li a{
+    color: black;
+}
+
+
+li a:hover{
+    text-decoration: none;
+    background-color: yellowgreen;
+}
+
+
+
+  main {
+  grid-area: content;
+  align-self: flex-start;
+  position: relative;
+      left: 200px;
+
+}
+
+.register1{
+    max-width: 120px;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.register form{
+    
+}
+
+/*input{*/
+    font-size: 80px;
+    display: block;
+    background-color: white;   
+}
+
+#sub{
+    display: block;
+}
+
+footer {
+  grid-area: footer;
+   border: 2px solid crimson;
+    text-align: center;
+}
+
+/*Media queries for responsive grid*/
+@media(max-width: 950px){
+    .container{
+        grid-template-areas:
+            'header header header'
+            'nav content content'
+            'footer footer footer';
+    }
+    main {
+   grid-area: content;
+  align-self: flex-start;
+  justify-self: center; 
+}
+nav {
+ grid-area: nav;
+ margin-left: auto;
+
+}
+     footer{
+        grid-template-columns: 1fr;
+        
+    }
+}
